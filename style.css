@@ -1,46 +1,55 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: aqua;
+
+
+
+
+
+body {
+    color: orange;
+   
 }
-.header-text{
-    font-size: 50px;
-    color: azure;
+h1 {
+    font-size: 54px;
+   
 }
-.main{
+
+.container {
     padding: 40px;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items:center ;
+   
+    align-items: center;
     flex-direction: column;
+    background-color: #37505C;
 }
-.container{
+
+#gameboard {
     display:grid ;
     grid-template-columns: auto auto auto;
-    background:darkgrey;
+   
+    background:rgb(66, 59, 59);
     margin-top: 40px;
     padding: 1px;
-
+    
 }
-.box{
-    background: white;
-    height:150px;
-    width:150px;
-    border:1px solid darkgray;
+.box {
+    height: 100px;
+    width: 100px;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    font-size: 100;
-    cursor: pointer;
+    align-items: center;
+   
+    color: orange;
+    font-size: 120px;
+    border: 2px solid;
+   
 }
-#resetbtn{
-    background: indigo;
-    border-radius: 10px;
-    color:white;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
 
+button {
+   
+    border-radius: 4px;
+    background-color: orange;
+    color: #333;
+    border-color: orange;
+    font-size: 18px;
+  
+    font-weight: 600;
 }
