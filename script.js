@@ -7,7 +7,7 @@ const xtext = "X"
 let currentPlayer = xtext
 let spaces = Array(9).fill(null)
 
-const startgame = () => {
+function startgame(){
     boxes.forEach(box => box.addEventListener('click', boxClicked))
 }
 
