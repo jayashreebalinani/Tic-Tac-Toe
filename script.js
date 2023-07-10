@@ -4,32 +4,32 @@ let restartbtn = document.getElementById('restart')
 let boxes = Array.from(document.getElementsByClassName('box'))
 const otext = "O"
 const xtext = "X"
-let currentPlayer = xtext
+let player = xtext
 let spaces = Array(9).fill(null)
-
-function startgame(){
-    boxes.forEach(box => box.addEventListener('click', boxClicked))
+function startgame() {
+    boxes.forEach(box => box.addEventListener('click', boxclicked))
 }
 
-function boxClicked(e) {
+function boxclicked(e) {
     
     const id = e.target.id
 
      if(spaces[id] == null){
-         spaces[id] = currentPlayer
-        e.target.innerText = currentPlayer
+         spaces[id] = player
+        e.target.innerText = player
 
         if(playerwin() !==false){
-            playerwon.innerHTML = `${currentPlayer} has won!`
+            playerwon.innerHTML = `${player} has won!`
     
           
         }
 
-        currentPlayer = currentPlayer == xtext ? otext : xtext
+        player = player == xtext ? otext : xtext
     }
 }
 
-const winningCombos = [
+
+const winning = [
     [0,1,2],
     [3,4,5],
     [6,7,8],
@@ -41,7 +41,7 @@ const winningCombos = [
 ]
 
 function playerwin() {
-    for (const condition of winningCombos) {
+    for (const condition of winning) {
         let [a, b, c] = condition
 
         if(spaces[a] && (spaces[a] == spaces[b] && spaces[a] == spaces[c])) {
@@ -63,7 +63,7 @@ function restart() {
 
     playerwon.innerHTML = ''
 
-    currentPlayer = xtext
+    player = xtext
 }
 
 startgame()
