@@ -10,7 +10,6 @@ h1 {
     flex-direction: column;
     background-color: #ffffff;
 }
-
 #gameboard {
     display:grid ;
     grid-template-columns: auto auto auto;
