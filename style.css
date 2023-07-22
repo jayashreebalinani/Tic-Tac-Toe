@@ -1,11 +1,8 @@
 
 h1 {
-    font-size: 54px;
-    
+    font-size: 54px;    
 }
-
-.container {
-    
+.container { 
     height: 600px;
     display: flex;
     justify-content: center;
