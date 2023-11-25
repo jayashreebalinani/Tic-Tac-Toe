@@ -1,4 +1,4 @@
-..............
+
 let playerwon = document.getElementById('playerwon')
 let restartbtn = document.getElementById('restart')
 let boxes = Array.from(document.getElementsByClassName('box'))
