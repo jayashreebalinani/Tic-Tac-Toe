@@ -9,7 +9,6 @@ let spaces = Array(9).fill(null)
 function startgame() {
     boxes.forEach(box => box.addEventListener('click', boxclicked))
 }
-
 function boxclicked(e) {
     
     const id = e.target.id
