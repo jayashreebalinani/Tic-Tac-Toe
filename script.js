@@ -10,7 +10,6 @@ function startgame() {
     boxes.forEach(box => box.addEventListener('click', boxclicked))
 }
 function boxclicked(e) {
-    
     const id = e.target.id
 
      if(spaces[id] == null){
