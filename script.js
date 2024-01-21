@@ -11,7 +11,6 @@ function startgame() {
 }
 function boxclicked(e) {
     const id = e.target.id
-
      if(spaces[id] == null){
          spaces[id] = player
         e.target.innerText = player
