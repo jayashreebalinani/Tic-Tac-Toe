@@ -64,5 +64,3 @@ function restart() {
 }
 
 startgame()
-
-
