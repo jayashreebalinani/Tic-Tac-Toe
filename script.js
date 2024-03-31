@@ -47,7 +47,6 @@ function playerwin() {
     }
     return false
 }
-
 restartbtn.addEventListener('click', restart)
 
 function restart() {
