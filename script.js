@@ -54,7 +54,6 @@ function restart() {
 
     boxes.forEach( box => {
         box.innerText = ''
-        
     })
 
     playerwon.innerHTML = ''
